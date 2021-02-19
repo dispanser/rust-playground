@@ -17,7 +17,7 @@ to write code to some level of proficiency. This requires:
 -- [ ] algebraic data types
 -- [ ] ... (tbd)
 - testing
--- [ ] unit tests
+-- [X] unit tests
 -- [ ] quickcheck / property-based
 - tooling
 -- [ ] intellij: setup

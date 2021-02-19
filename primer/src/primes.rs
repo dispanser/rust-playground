@@ -20,5 +20,25 @@ fn is_prime(n: i32) -> bool {
 
 fn is_prime2(n: &i32) -> bool {
     let max: i32 = (*n as f32).sqrt() as i32;
-    !(2 .. max).any(|i| n % i == 0)
+    !(2 ..= max).any(|i| n % i == 0)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_is_prime() {
+        assert_eq!(is_prime(2), true);
+        assert_eq!(is_prime(3), true);
+        assert_eq!(is_prime(4), false);
+    }
+
+    #[test]
+    fn test_is_prime2() {
+        assert_eq!(is_prime2(&2), true);
+        assert_eq!(is_prime2(&3), true);
+        assert_eq!(is_prime2(&4), false);
+    }
+
 }
