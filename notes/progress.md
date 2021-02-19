@@ -18,7 +18,7 @@ to write code to some level of proficiency. This requires:
 -- [ ] ... (tbd)
 - testing
 -- [X] unit tests
--- [ ] quickcheck / property-based
+-- [X] quickcheck / property-based: using proptests
 - tooling
 -- [ ] intellij: setup
 -- [ ] intellij: debug
@@ -37,5 +37,6 @@ to write code to some level of proficiency. This requires:
 -- [ ] ballista ftw!
 
 We start simple, and write code for everything we try. The list above is just
-a bunch of starting points for exploration.
+a bunch of starting points for exploration. Also, the idea is that do the most
+simple thing that allows crossing of some goal.
 
