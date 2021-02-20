@@ -19,10 +19,14 @@ to write code to some level of proficiency. This requires:
 - testing
 -- [X] unit tests
 -- [X] quickcheck / property-based: using proptests
+-- [ ] doctests: rustdoc code examples that compile and assert, whoo!
+-- [ ] fuzzing: generating examples that try to hit under-covered code paths
+-- [ ] see [LogRocket blog](https://blog.logrocket.com/how-to-organize-your-rust-tests/)
 - tooling
 -- [ ] intellij: setup
 -- [ ] intellij: debug
 -- [ ] vim support: code completion et al
+-- [ ] benchmarking: [criterion](https://docs.rs/criterion/0.3.4/criterion/)
 - standard library
 -- [ ] handling files
 -- [ ] handling network
@@ -35,6 +39,10 @@ to write code to some level of proficiency. This requires:
 -- [ ] roll your own rest API
 -- [ ] dive into delta-rs, parquet, arrow
 -- [ ] ballista ftw!
+- actor systems
+-- [Actix](https://github.com/actix/actix)
+-- [Racer](https://riker.rs/actors/)
+-- performance: compare to akka
 
 We start simple, and write code for everything we try. The list above is just
 a bunch of starting points for exploration. Also, the idea is that do the most

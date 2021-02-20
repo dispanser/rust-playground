@@ -1,12 +1,13 @@
 [package]
-name = "rust-playground"
+name = "rpg"
 version = "0.1.0"
 authors = ["Thomas Peiselt <pi@kulturguerilla.org>"]
 edition = "2018"
+description = "rust playground"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+proptest = "0.10.1"
 
 [dev-dependencies]
-proptest = "0.10.1"

@@ -9,7 +9,8 @@ pub fn primes2(n: i32) -> impl Iterator<Item = i32> {
         .filter(|i| is_prime2(*i))
 }
 
-fn is_prime(n: i32) -> bool {
+// public methods don't cry when they are not called.
+pub fn is_prime(n: i32) -> bool {
     for i in 2 .. n {
         if n % i == 0 {
             return false;
