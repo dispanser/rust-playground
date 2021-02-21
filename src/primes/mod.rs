@@ -9,7 +9,11 @@ pub fn primes2(n: i32) -> impl Iterator<Item = i32> {
         .filter(|i| is_prime2(*i))
 }
 
-// public methods don't cry when they are not called.
+/// public methods don't cry when they are not called.
+/// ```
+/// # use rpg::primes::is_prime;
+/// assert_eq!(is_prime(5), true)
+/// ```
 pub fn is_prime(n: i32) -> bool {
     for i in 2 .. n {
         if n % i == 0 {
@@ -29,7 +33,7 @@ use proptest::prelude::*;
 proptest! {
     #[test]
     fn prime_checkers_equal(n in 0i32 .. 1000000) {
-        assert_eq!(is_prime(n), is_prime2(n), "haha")
+        assert_eq!(is_prime(n), is_prime2(n), "haha");
     }
 }
 
